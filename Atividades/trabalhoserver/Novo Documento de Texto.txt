@@ -1,0 +1,128 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Meta tags Obrigatórias -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <title>Formulários</title>
+        <script src="enviar.js"></script>
+
+    </head>
+    <body>
+        <section class="container-fluid">
+            <header style="background-color: #4682b4; color:#fff; padding: 0.5%;">
+                <div id="cabecalho" class="row">
+                    <div id="nome" class="col-md-6">
+                        <p><h1 style="font-size: 40px">BIBLIOTECA MUNDO DAS TRAÇAS</h1></p>
+                    </div>
+                    <div id="login">
+                        <h1 style="font-size: 40px">Área de Login</h1><br>
+                        <form class="form-inline">
+                            <div class="form-group mb-2">
+                                <label for="staticEmail2" class="sr-only">Email</label>
+                                <input style="background: white" type="text" class="form-control" id="staticEmail2" placeholder="Login">
+                            </div>
+                            <div class="form-group mx-sm-3 mb-2">
+                                <label for="inputPassword2" class="sr-only">Senha</label>
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="Senha">
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-2">Confirmar identidade</button>
+                        </form>
+                    </div>
+                </div>
+            </header>
+            <ul style="margin-top: 10px; margin-bottom: 10px; background-color: " class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acervo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Videoteca</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Entre em Contato</a>
+                </li>
+            </ul>
+            <div style="max-width: 100%" class="container">
+                <div style="color: #4682b4" class="row">
+                    <div class="col-sm">
+                        <h1>Visite nosso Acervo Online</h1>
+                    </div>
+                </div>
+            </div>
+            <article>
+                <div class="row">
+                    <div class="col-md-6 border">
+                        <div>
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Livro</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Livro">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Autor</label>
+                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Autor">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress">Editora</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Editora">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress2">Ano da Edição</label>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Ano da Edição">
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Pesquisar na Web?
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Entrar</button>
+                            </form>				
+                        </div>			
+                    </div>
+                    <div class="col-md-6 border">
+                        <h1>Seja Bem Vindo!</h1><br>
+                        <p>
+                            Use o formulário ao lado para pesquisar o nosso acervo Online
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <p>Enderço: Rua dos Bobos, nº</p>
+                            <p>Porto Alegre - RS</p>
+                        </div>
+                        <div class="col-sm">
+                            <h1>Biblioteca Mundo das Traças</h1>
+                            <p>Telefone/Whats:(51)999999.1234</p>
+                        </div>
+                        <div class="col-sm">
+                            <p>Instagram/Facebook: ...</p>
+                            <p>Email: traca@traca.com.br</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>	
+        </section>
+        <!-- JavaScript (Opcional) -->
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

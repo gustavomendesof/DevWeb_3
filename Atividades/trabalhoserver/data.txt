@@ -1,0 +1,66 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.Scanner"%>
+<%@page import="java.util.Date"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>JSP + Spring + Bootstrap</title>
+  </head>
+  <body>
+      <section>
+          <header><h1>Biblioteca</h1></header>
+          <nav>
+              <div class="menu">
+                  <a href="#">Home da Biblioteca</a>
+                  <a href="#">Acervo</a>
+                  <a href="#">Destaques</a>
+              </div>
+          </nav>
+          <article>
+              <%
+                  String mensagem="Bem vindo ao sistema de Blibioteca";
+                  %>
+                  <%
+                      out.println(mensagem);
+                  %>
+                  <br>
+                  <% String desenvolvido = "Sistema desenvolvido por (seunome)";
+                  %>
+          </article>
+          <article style="background-color: purple; color:#fff; text-align: center">
+              Texto
+          </article>
+          <article>
+              <%
+                  String livro;
+                  Scanner ler = new Scanner(System.in);
+                  int dia = Integer.parseInt((new SimpleDateFormat("dd"))
+                         .format(new Date()));
+                  %>
+                  <p><%
+                  out.println("Livro Harry Potter alugado com Sucesso");
+                  %></p>
+                   <p><%
+                  out.println("Dia da locação: " + dia);
+                  %></p>
+                    <p><%
+                  out.println("Porfavor devovler até o dia: " + (dia+7));   
+                   %>
+          </article>
+          
+      </section>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
